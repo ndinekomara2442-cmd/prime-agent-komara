@@ -1,0 +1,25 @@
+{
+  "name": "prime-agent-komara",
+  "version": "1.0.0",
+  "description": "Prime Agent for Komara Agency — Self-improving RLM agent with multi-platform bot connectors",
+  "main": "connectors.py",
+  "scripts": {
+    "start": "python connectors.py",
+    "test": "python -m pytest tests/",
+    "lint": "python -m flake8 ."
+  },
+  "keywords": [
+    "prime-agent",
+    "rlm",
+    "komara-agency",
+    "telegram-bot",
+    "facebook-messenger",
+    "instagram",
+    "whatsapp",
+    "ai-agent"
+  ],
+  "author": "Ndine Komara",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
