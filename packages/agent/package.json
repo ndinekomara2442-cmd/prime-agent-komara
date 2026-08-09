@@ -1,0 +1,16 @@
+{
+  "name": "@komara/agent",
+  "version": "1.0.0",
+  "description": "Top-level orchestrator for Komara Agency multi-platform bots",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "pytest test/ -v"
+  },
+  "dependencies": {
+    "@komara/ai": "1.0.0",
+    "@komara/coding-agent": "1.0.0",
+    "@komara/tui": "1.0.0"
+  }
+}

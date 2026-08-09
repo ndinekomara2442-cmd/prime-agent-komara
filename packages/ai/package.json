@@ -1,0 +1,15 @@
+{
+  "name": "@komara/ai",
+  "version": "1.0.0",
+  "description": "AI provider abstraction and response engine for Komara Agency",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "pytest test/ -v"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
