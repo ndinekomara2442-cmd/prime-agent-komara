@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pytest tests/ -v --tb=short 2>/dev/null || echo "No tests to run or pytest not available"

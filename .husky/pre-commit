@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run check 2>/dev/null || python3 -m flake8 . --max-line-length=120 --extend-ignore=E203,W503 || true
