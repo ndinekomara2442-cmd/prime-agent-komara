@@ -6,7 +6,11 @@ Connecte les bots Telegram, Facebook, Instagram et WhatsApp à Prime Agent.
 import json
 import os
 from typing import Dict, Optional
+from dotenv import load_dotenv
 
+load_dotenv()
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 class KomaraConnectors:
     """Gestionnaire de connexions pour les agents Komara."""
@@ -14,12 +18,14 @@ class KomaraConnectors:
     def __init__(self):
         self.agents = {
             "telegram": {
-                "name": "Komara Telegram Bot",
-                "username": "@Komara_Agency_botbot",
-                "bot_id": "8787499105",
-                "status": "active",
-                "type": "realtime",
-                "webhook": "komaraTelegramBot",
+    "name": "Komara Telegram Bot",
+    "username": "@Komara_Agency_botbot",
+    "bot_id": "8787499105",
+    "token": TELEGRAM_TOKEN,
+    "status": "active",
+    "type": "realtime",
+    "webhook": "komaraTelegramBot",
+},
             },
             "facebook": {
                 "name": "Komara Facebook Messenger",
